@@ -1,0 +1,31 @@
+/*		Clases genericas 	*/
+body {
+	background-color: #ccc;
+}
+.contenedor {
+	padding: 10px;
+}
+
+.cabecera {
+	background: tomato;
+}
+
+.panel-quienes-somos {
+	background: brown;
+}
+
+.panel-ofertas {
+	background: deeppink;
+}
+	.panel-ofertas .ofertas-tarjeta {
+		background: yellow;
+		border: 1px solid black;
+		text-align: center;
+	}
+	.panel-ofertas .ofertas-tarjeta img {
+		width: 100%;
+	}
+
+.pie-de-pagina {
+	background: violet;
+}
