@@ -16,8 +16,10 @@ body {
 	text-decoration: none;
 	text-align: center;
 }
-	.btn .chico {
+	.btn.chico {
 		width: 100px;
+	}
+	.btn.grande {
 	}
 
 .contenido-centrado {
