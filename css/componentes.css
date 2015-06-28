@@ -1,13 +1,13 @@
-/*		Clases genericas 	*/
-body {
-	background-color: #ccc;
-}
-.contenedor {
-	padding: 10px;
-}
-
 .cabecera {
-	background: tomato;
+  position: relative;
+  min-height: 500px;
+}
+.covervid-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .panel-quienes-somos {

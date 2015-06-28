@@ -6,13 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/componentes.css">
 </head>
 <body>
-	<div class="cabecera">header</div>
+	<div class="cabecera">
+		<div class="covervid-wrapper">
+		    <video class="covervid-video" autoplay>
+		        <!--<source src="./video.webm" type="video/webm">-->
+		        <source src="./video.mp4" type="video/mp4">
+		    </video>
+		</div>
+	</div>
 		<div class="panel-quienes-somos">
 			<div class="contenedor">
-				quienes somos
+				<h2>Quienes somos</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo cumque accusamus minima doloremque? Sit porro itaque quod molestiae eligendi culpa minima nesciunt.
+					Laudantium, officiis, dicta! Veritatis, nihil! Repudiandae, consequuntur, neque.</p>
+					<img class="pure-img" src="http://placehold.it/300x300">
+					<p>Nobis ad placeat nulla tempore, alias ducimus. Odio saepe ratione vero.</p>
+				<ul>
+					<li>item list</li>
+					<li>item list</li>
+					<li>item list</li>
+					<li>item list</li>
+				</ul>
 			</div>
 		</div>
 		<div class="panel-ofertas">
@@ -42,12 +60,16 @@
 							<h3>tarjeta</h3>
 							<img class="pure-img" src="http://placehold.it/350x350">
 						</div>
-					</div>															
+					</div>
 				</div>
 			</div>
 		</div>
 	<div class="pie-de-pagina">
 		<div class="contenedor">pie</div>
 	</div>
+	<!-- scritps -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/covervid.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 </html>
