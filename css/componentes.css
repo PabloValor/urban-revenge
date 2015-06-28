@@ -1,18 +1,36 @@
 .cabecera {
   position: relative;
   min-height: 500px;
+  overflow: hidden;
 }
-.covervid-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  .cabecera .overlay {
+    background-image: url('../imagenes/dot-bg.png');
     height: 100%;
-}
-
-.panel-quienes-somos {
-	background: brown;
-}
+  }
+  .cabecera .covervid-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  .cabecera video {
+    z-index: -1;
+  }
+  .cabecera .contenedor-cabecera-texto {
+    display: table;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .panel-quienes-somos {
+  	background: brown;
+  }
 
 .panel-ofertas {
 	background: deeppink;

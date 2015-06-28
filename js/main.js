@@ -11,6 +11,6 @@ $(document).on('ready', function(){
   //seteando el alto de la cabecera de acuerdo al alto de la ventana
   $cabecera.height(altoVentana);
 
-  //inicializando plugin covervid
+  //inicializando plugin covervid (video como background)
   $('.covervid-video').coverVid(1920, 1080);
 });
