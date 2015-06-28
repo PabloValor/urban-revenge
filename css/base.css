@@ -1,7 +1,25 @@
 /*		Clases generales 	*/
 body {
 	background-color: #ccc;
+	font-size: 20px;
 }
 .contenedor {
 	padding: 10px 20px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.btn {
+	border: 1px solid gray;
+	color: black;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+	.btn .chico {
+		width: 100px;
+	}
+
+.contenido-centrado {
+	text-align: center;
 }

@@ -1,3 +1,4 @@
+/** Cabecera **/
 .cabecera {
   position: relative;
   min-height: 500px;
@@ -26,24 +27,44 @@
   h1 {
     color: white;
     display: table-cell;
+    font-size: 4em;
     vertical-align: middle;
   }
+/** Fin Cabecera **/
+
+/** Panel Quienes Somos **/
   .panel-quienes-somos {
   	background: brown;
   }
+/** Fin Panel Quienes Somos **/
 
+/** Panel Ofertas **/
 .panel-ofertas {
-	background: deeppink;
+	background: #E1E1E1;
 }
-	.panel-ofertas .ofertas-tarjeta {
-		background: yellow;
-		border: 1px solid black;
-		text-align: center;
-	}
-	.panel-ofertas .ofertas-tarjeta img {
-		width: 100%;
-	}
+  .panel-ofertas .contenedor-tarjetas{
+    border-spacing: 10px;
+    display: table;
+    width: 100%;
+  }
+  .panel-ofertas .fila-tarjetas {
+    display: table-row;
+  }
+  .panel-ofertas .tarjeta {
+    border: 1px solid #CACACA;
+    background: #F1F1F1;
+    box-shadow: 0 0px 6px  rgba(0,0,0,.2);
+    display: table-cell;
+    padding: 0 20px;
+    width: 30%;
+  }
+    .tarjeta img {
+      width: 200px;
+    }
+/** Fin Panel Ofertas **/
 
+/** Footer **/
 .pie-de-pagina {
 	background: violet;
 }
+/** Fin Footer **/
