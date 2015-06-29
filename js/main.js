@@ -6,11 +6,25 @@ $(document).on('ready', function(){
     var $covervid   = $('.covervid-video');
     var altoVentana = $(window).height();
     var $tarjetas    = $('.tarjeta');
+    var $irArriba   = $('#irArriba');
 
+    // Oculta el boton 'ir arriba' si no hay scroll
+    $(window).on('scroll', function(){
+        if($(this).scrollTop()) {
+            $irArriba.fadeIn();
+        } else {
+            $irArriba.fadeOut();
+        }
+    });
+
+    // Anima el scroll hasta el comienzo de la pagina
+     $irArriba.on('click', function(){
+         $("html, body").animate({scrollTop: 0}, 1000);
+     });
     /* Suscribo a la coleccion de tarjetas al evento hover */
     $tarjetas.hover(function(){
          $(this).find('.tarjeta-imagen-contenedor').css({
-            "transform": "scale(2) rotate(20deg)"
+            "transform": "scale(2.5) rotate(-20deg)"
          });
          $(this).find('.tarjeta-detalle-producto-contenedor').css({
             "left": "0"

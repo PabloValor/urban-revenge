@@ -2,6 +2,7 @@
 body {
 	background-color: #ccc;
 	font-size: 20px;
+	position: relative;
 }
 .contenedor {
 	padding: 10px 20px;
