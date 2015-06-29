@@ -62,14 +62,16 @@
         font-size: 1.1em;
         letter-spacing: 1px;
         line-height: 1.4em;
-
     }
 
 /** Fin Panel Quienes Somos **/
 
 /** Panel Ofertas **/
 .panel-ofertas {
-	background: #E1E1E1;
+	background: url('../imagenes/productos-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
   .panel-ofertas .contenedor-tarjetas{
     border-spacing: 20px;

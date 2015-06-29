@@ -8,6 +8,10 @@ body {
 	max-width: 1024px;
 	margin: 0 auto;
 }
+.contenedor h2 {
+	font-size: 1.8em;
+	text-align: center;
+}
 h1,h2,h3,h4,h4 {
 	font-family: 'Poiret One', cursive;
 	letter-spacing: 2px;
