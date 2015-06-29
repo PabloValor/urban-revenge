@@ -170,8 +170,18 @@
 
 /** Footer **/
 .pie-de-pagina {
-	background: #2B2931;
+	background: url('../imagenes/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     color: silver;
+    display: table;
+    min-height: 100px;
     text-align: center;
+    width: 100%;
 }
+    .pie-de-pagina p {
+        display: table-cell;
+        vertical-align: middle;
+    }
 /** Fin Footer **/

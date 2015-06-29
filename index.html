@@ -14,6 +14,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jquery.modal.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/componentes.css">
 	<link rel="stylesheet" href="css/responsive.css">
@@ -36,20 +37,20 @@
 				</div>
 		</div>
 	</div>
-		<div class="panel-quienes-somos">
-			<div class="contenedor">
-				<h2><i class="fa fa-chevron-right"></i> Quienes somos</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo cumque accusamus minima doloremque? Sit porro itaque quod molestiae eligendi culpa minima nesciunt.
-					Laudantium, officiis, dicta! Veritatis, nihil! Repudiandae, consequuntur, neque.</p>
-				<ul>
-					<li>item list</li>
-					<li>item list</li>
-					<li>item list</li>
-					<li>item list</li>
-				</ul>
-			</div>
+	<div class="panel-quienes-somos">
+		<div class="contenedor">
+			<h2><i class="fa fa-chevron-right"></i> Quienes somos</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo cumque accusamus minima doloremque? Sit porro itaque quod molestiae eligendi culpa minima nesciunt.
+				Laudantium, officiis, dicta! Veritatis, nihil! Repudiandae, consequuntur, neque.</p>
+			<ul>
+				<li>item list</li>
+				<li>item list</li>
+				<li>item list</li>
+				<li>item list</li>
+			</ul>
 		</div>
-		<div class="panel-ofertas">
+	</div>
+	<div class="panel-ofertas">
 			<div class="contenedor">
 				<h2><i class="fa fa-chevron-right"></i> Productos</h2>
 				<div class="contenedor-tarjetas">
@@ -60,6 +61,17 @@
 									<div class="contenedor">
 										<h3>Tabla surf profesional</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus eveniet.</p>
+										<br>
+										<p class="contenido-centrado">
+											<a href="#prod1" rel="modal:open" class="btn chico">Ver mas</a>
+										</p>
+										<!-- Contenido de modal -->
+										<div id="prod1" style="display:none;" class="modal">
+											<p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+											<p>
+												<img src="imagenes/producto-1.jpg" alt="Surf">
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -146,13 +158,12 @@
 			</div>
 		</div>
 	<div class="pie-de-pagina">
-		<div class="contenedor">
-			<p>Urban Revenge 2015 <sup>&reg;</sup></p>
-		</div>
+		<p>Urban Revenge 2015 <sup>&reg;</sup></p>
 	</div>
 	<!-- scritps -->
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/covervid.min.js"></script>
+	<script src="./js/jquery.modal.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>

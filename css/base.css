@@ -21,16 +21,28 @@ p, li, a, span {
 }
 
 .btn {
-	border: 1px solid gray;
-	color: black;
+	border: 1px solid white;
+	color: white;
 	padding: 10px 20px;
 	text-decoration: none;
 	text-align: center;
+	transition: .4s;
 }
+	.btn:hover {
+		background: white;
+		color: black;
+	}
 	.btn.chico {
 		width: 100px;
 	}
 	.btn.grande {
+	}
+
+.modal {
+	color: #5F5F5F;
+}
+	.modal img {
+		width: 100%;
 	}
 
 .contenido-centrado {
