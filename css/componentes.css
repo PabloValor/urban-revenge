@@ -76,20 +76,56 @@
       transition: .5s;
       width: 100%;
    }
-   .panel-ofertas .tarjeta-imagen-contenedor.producto-1{
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-1 {
       background: url('../imagenes/producto-1.jpg');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
    }
-   .panel-ofertas .tarjeta-imagen-contenedor.producto-2{
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-2 {
       background: url('../imagenes/producto-2.jpg');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
    }
-   .panel-ofertas .tarjeta-imagen-contenedor.producto-3{
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-3 {
       background: url('../imagenes/producto-3.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+   }
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-4 {
+      background: url('../imagenes/producto-4.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+   }
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-5 {
+      background: url('../imagenes/producto-5.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+   }
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-6 {
+      background: url('../imagenes/producto-6.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+   }
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-7 {
+      background: url('../imagenes/producto-7.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+   }
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-8 {
+      background: url('../imagenes/producto-8.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+   }
+   .panel-ofertas .tarjeta-imagen-contenedor.producto-9 {
+      background: url('../imagenes/producto-9.jpg');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
