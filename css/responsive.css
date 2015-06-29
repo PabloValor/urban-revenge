@@ -1,0 +1,16 @@
+@media screen and (max-width: 800px) {
+   .panel-ofertas {
+
+   }
+      .panel-ofertas .fila-tarjetas {
+         display: block;
+      }
+      .panel-ofertas .tarjeta {
+         display: block;
+         margin-bottom: 15px;
+         width: 100%;
+      }
+      .panel-ofertas .tarjeta-detalle-producto-contenedor {
+         left: 0;
+      }
+}

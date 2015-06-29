@@ -1,8 +1,9 @@
 /** Cabecera **/
 .cabecera {
-  position: relative;
-  min-height: 500px;
-  overflow: hidden;
+    font-weight: lighter;
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
 }
   .cabecera .overlay {
     background-image: url('../imagenes/puntos-bg.png');
@@ -24,18 +25,46 @@
     height: 100%;
     width: 100%;
   }
-  h1 {
-    color: white;
+  .cabecera .fila {
+      display: table-row;
+  }
+  .cabecera h1 {
+    color: rgba(255, 255, 255, .8);
     display: table-cell;
     font-size: 4em;
+    letter-spacing: 4px;
     vertical-align: middle;
   }
+  .cabecera h2 {
+      color: rgba(255, 255, 255, .8);
+      font-size: 1.5em;
+      vertical-align: middle;
+  }
+ .cabecera .titulo {
+     height: 90%;
+ }
+ .cabecera .subtitulo {
+     height: 10%;
+ }
 /** Fin Cabecera **/
 
 /** Panel Quienes Somos **/
-  .panel-quienes-somos {
-  	background: brown;
-  }
+    .panel-quienes-somos {
+        background: url('../imagenes/quienes-somos-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        color: white;
+        min-height: 500px;
+        text-align: left;
+    }
+    .panel-quienes-somos p, li {
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        line-height: 1.4em;
+
+    }
+
 /** Fin Panel Quienes Somos **/
 
 /** Panel Ofertas **/
@@ -51,7 +80,7 @@
     display: table-row;
   }
   .panel-ofertas .tarjeta {
-      box-shadow: 0 0px 6px  rgba(0,0,0,.2);
+      box-shadow: 0 5px 6px rgba(0,0,0,.2);
       display: table-cell;
       height: 400px;
       position: relative;
@@ -140,6 +169,8 @@
 
 /** Footer **/
 .pie-de-pagina {
-	background: violet;
+	background: #2B2931;
+    color: silver;
+    text-align: center;
 }
 /** Fin Footer **/
