@@ -31,17 +31,21 @@ $(document).on('ready', function(){
      });
     /* Suscribo a la coleccion de tarjetas al evento hover */
     $tarjetas.hover(function(){
+        //Escalo al 200% y roto 20 grados en sentido contrario la imagen
          $(this).find('.tarjeta-imagen-contenedor').css({
             "transform": "scale(2.5) rotate(-20deg)"
          });
+         //la capa de detalle se hace visible
          $(this).find('.tarjeta-detalle-producto-contenedor').css({
             "left": "0"
          });
         },
         function(){
+            // La imagen vuelve a su a su estado inicial en el evento mouseleave
          $(this).find('.tarjeta-imagen-contenedor').css({
            "transform": "scale(1) rotate(0)"
          });
+          // LA capa de detalle se oculta en el mouseleave
          $(this).find('.tarjeta-detalle-producto-contenedor').css({
            "left": "-100%"
          });
