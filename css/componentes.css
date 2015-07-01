@@ -179,9 +179,21 @@
 
 /** Fin Panel Ofertas **/
 
+/** Panel Mapa **/
+iframe {
+    border: 0;
+    frameborder: 0;
+    height: 350px;
+    width: 100%;
+}
+/** Fin Panel Mapa **/
+
 /** Panel Contactanos **/
 .panel-contacto {
-
+    background: url('../imagenes/productos-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
     .panel-contacto form {
         max-width: 1024px;
@@ -200,6 +212,7 @@
     .panel-contacto button {
         border: 1px solid black;
         padding: 8px 16px;
+        margin-top: .5em;
     }
     .panel-contacto button:hover {
         color: gray;
@@ -228,6 +241,7 @@
 /** Ir arriba boton **/
 #irArriba {
     color: rgba(255,255,255,.8);
+    cursor: pointer;
     font-size: 1.9em;
     bottom: 10px;
     right: 10px;
