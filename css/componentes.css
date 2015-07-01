@@ -179,6 +179,33 @@
 
 /** Fin Panel Ofertas **/
 
+/** Panel Contactanos **/
+.panel-contacto {
+
+}
+    .panel-contacto form {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .panel-contacto .contenedor-control {
+        text-align: center;
+        margin: .5em 0;
+    }
+    .panel-contacto input {
+        border: 2px solid black;
+        line-height: 2em;
+        text-indent: .5em;
+        width: 80%;
+    }
+    .panel-contacto button {
+        border: 1px solid black;
+        padding: 8px 16px;
+    }
+    .panel-contacto button:hover {
+        color: navy;
+    }
+/** Fin Panel Contactanos **/
+
 /** Footer **/
 .pie-de-pagina {
 	background: url('../imagenes/footer-bg.jpg');
@@ -188,7 +215,7 @@
     border-top: 6px solid #3C61A0;
     color: silver;
     display: table;
-    min-height: 100px;
+    min-height: 150px;
     text-align: center;
     width: 100%;
 }
@@ -200,11 +227,12 @@
 
 /** Ir arriba boton **/
 #irArriba {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(255,255,255,.8);
     font-size: 1.9em;
     bottom: 10px;
     right: 10px;
     display: inline-block;
     position: fixed;
+    text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray; /* Estilizando el borde de un caracter */
 }
 /** Fin Ir arriba boton **/

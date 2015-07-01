@@ -217,7 +217,7 @@ left:0;
 }
 
 .bxslider, .bxslider li {
-height: 100vh !important;;
+height: 60vh !important;;
 }
 
 .bxslider li {
@@ -232,4 +232,8 @@ background-size: cover;
 ul.bxslider {
 	padding-left: 0;
 	margin: 0;
+}
+
+li.bx-clone {
+	height: 500px;
 }
