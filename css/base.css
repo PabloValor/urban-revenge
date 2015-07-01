@@ -17,6 +17,9 @@ h1,h2,h3,h4,h4 {
 	font-family: 'Poiret One', cursive;
 	letter-spacing: 2px;
 }
+h4 {
+	font-size: 1.1em;
+}
 p, li, a, span {
 	font-family: 'Signika', sans-serif;
 }
