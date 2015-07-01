@@ -17,6 +17,14 @@ $(document).on('ready', function(){
         }
     });
 
+    //Inicializando Carrusel
+    $('.bxslider').bxSlider({
+        mode: 'horizontal',
+        infiniteLoop: true,
+        tickerHover: true,
+        pager: false
+    });
+
     // Anima el scroll hasta el comienzo de la pagina
      $irArriba.on('click', function(){
          $("html, body").animate({scrollTop: 0}, 1000);
