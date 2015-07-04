@@ -39,7 +39,7 @@ $(document).on('ready', function(){
     /* Suscribo a la coleccion de tarjetas al evento hover */
     $tarjetas.hover(function(){
         // Escalo al 200% y roto 20 grados en sentido contrario la imagen
-         $(this).find('.tarjeta-imagen-contenedor').css({ "transform": "scale(2.5) rotate(-20deg)"});
+         $(this).find('.tarjeta-imagen-contenedor').css({ "transform": "scale(3) rotate(-20deg)"});
          // La capa de detalle se hace visible
          $(this).find('.tarjeta-detalle-producto-contenedor').css({"left": "0"});
         },

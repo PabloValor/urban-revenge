@@ -108,11 +108,26 @@
       width: 100%;
       transition: .2s;
    }
+      .tarjeta-detalle-producto-contenedor {
+
+      }
       .tarjeta-detalle-producto-contenedor .contenedor {
          padding: 0 20px;
       }
-      .tarjeta-detalle-producto-contenedor h4 {
+      .tarjeta-detalle-producto-contenedor h3 {
           margin: .2em 0;
+      }
+      .tarjeta-detalle-producto-contenedor h4 {
+          margin: .1em 0 .4em 0;
+      }
+      .tarjeta-detalle-producto-contenedor p {
+          margin: 0;
+      }
+      .tarjeta-detalle-producto-contenedor .marca img {
+          max-width: 100px;
+      }
+      .tarjeta-detalle-producto-contenedor .colores {
+          text-align: center;
       }
       .tarjeta-detalle-producto-contenedor .colores i {
           margin-right: 2px;
