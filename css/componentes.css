@@ -71,7 +71,7 @@
     color: white;
 }
     .bxslider .contenedor {
-        background: url('../imagenes/puntos-bg.png'), rgba(0,0,0,.1);
+        background: url('../imagenes/puntos-bg.png'), rgba(0,0,0,.4);
         margin-top: 1em;
     }
 /** Fin Panel Carrusel **/
@@ -118,19 +118,39 @@
           margin: .2em 0;
       }
       .tarjeta-detalle-producto-contenedor h4 {
-          margin: .1em 0 .4em 0;
+          margin: .1em 0em .4em .4em;
       }
       .tarjeta-detalle-producto-contenedor p {
           margin: 0;
       }
+      .tarjeta-detalle-producto-contenedor .btn {
+          transition: .2s;
+      }
+      .tarjeta-detalle-producto-contenedor .btn i{
+          margin-right: 2px;
+          transition: .3s;
+      }
+      .tarjeta-detalle-producto-contenedor .marca {
+          margin-top: 10px;
+      }
       .tarjeta-detalle-producto-contenedor .marca img {
           max-width: 100px;
       }
+      .tarjeta-detalle-producto-contenedor .colores h4 {
+          color: #3C3C3C;
+          font-family: 'Signika', sans-serif;
+          font-size: .9em;
+          text-align: left;
+      }
       .tarjeta-detalle-producto-contenedor .colores {
+          background: rgba(255,255,255,.8);
+          border: 1px solid black;
+          padding: 10px 0;
           text-align: center;
       }
       .tarjeta-detalle-producto-contenedor .colores i {
           margin-right: 2px;
+          transition: .2s;
       }
       .tarjeta-detalle-producto-contenedor .rojo {
           color: red;

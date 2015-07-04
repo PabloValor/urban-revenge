@@ -5,8 +5,10 @@ $(document).on('ready', function(){
     var $cabecera   = $('.cabecera');
     var $covervid   = $('.covervid-video');
     var altoVentana = $(window).height();
-    var $tarjetas    = $('.tarjeta');
+    var $tarjetas   = $('.tarjeta');
     var $irArriba   = $('#irArriba');
+    var $botones    = $('.tarjeta-detalle-producto-contenedor .btn');
+    var $colores    = $('.tarjeta-detalle-producto-contenedor .colores i');
 
     // Oculta el boton 'ir arriba' si no hay scroll
     $irArriba.hide();
@@ -35,6 +37,24 @@ $(document).on('ready', function(){
      $irArriba.on('click', function(){
          $("html, body").animate({scrollTop: 0}, 1000);
      });
+
+     /* Animo el signo del boton "ver mas" en el hover */
+     $botones.hover(function(){
+         $(this).find('i').css({"transform" : "rotate(90deg)"});
+     },
+        function(){
+            $(this).find('i').css({"transform" : "rotate(0)"});
+        }
+    );
+
+    /* Animo colores del producto en el hover */
+    $colores.hover(function(){
+        $(this).css({"transform" : "scale(2)"});
+    },
+       function(){
+           $(this).css({"transform" : "scale(1)"});
+       }
+   );
 
     /* Suscribo a la coleccion de tarjetas al evento hover */
     $tarjetas.hover(function(){
