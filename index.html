@@ -5,19 +5,17 @@
 	<title>Urban Revenge</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<!--
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-	-->
-	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/jquery.bxslider.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/jquery.modal.css">
+	<link rel="stylesheet" href="css/vendor/normalize.css">
+	<link rel="stylesheet" href="css/vendor/animate.css">
+	<link rel="stylesheet" href="css/vendor/font-awesome.css">
+	<link rel="stylesheet" href="css/vendor/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/vendor/jquery.modal.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/componentes.css">
 	<link rel="stylesheet" href="css/responsive.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="cabecera">
@@ -38,7 +36,7 @@
 		</div>
 	</div>
 	<div class="panel-quienes-somos">
-		<div class="contenedor">
+		<div class="contenedor wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
 			<h2><i class="fa fa-chevron-right"></i> Quienes somos</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo cumque accusamus minima doloremque? Sit porro itaque quod molestiae eligendi culpa minima nesciunt.
 				Laudantium, officiis, dicta! Veritatis, nihil! Repudiandae, consequuntur, neque.</p>
@@ -54,7 +52,7 @@
 			<div class="contenedor">
 				<h2><i class="fa fa-chevron-right"></i> Productos</h2>
 				<div class="contenedor-tarjetas">
-						<div class="fila-tarjetas">
+						<div class="fila-tarjetas wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
 							<div class="tarjeta">
 								<div class="tarjeta-imagen-contenedor producto-1"></div>
 								<div class="tarjeta-detalle-producto-contenedor">
@@ -135,7 +133,7 @@
 							</div>
 						</div>
 						<!-- Segunda fila -->
-						<div class="fila-tarjetas">
+						<div class="fila-tarjetas wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
 							<div class="tarjeta">
 								<div class="tarjeta-imagen-contenedor producto-4"></div>
 								<div class="tarjeta-detalle-producto-contenedor">
@@ -216,7 +214,7 @@
 							</div>
 						</div>
 						<!-- Tercera fila -->
-						<div class="fila-tarjetas">
+						<div class="fila-tarjetas wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.7s">
 							<div class="tarjeta">
 								<div class="tarjeta-imagen-contenedor producto-7"></div>
 								<div class="tarjeta-detalle-producto-contenedor">
@@ -225,7 +223,7 @@
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus eveniet.</p>
 										<h4>Colores disponibles</h4>
 										<div class="colores">
-											<i class="fa fa-circle cyan"></i>
+											<i class="fa fa-circle cian"></i>
 											<i class="fa fa-circle negro"></i>
 											<i class="fa fa-circle amarillo"></i>
 										</div>
@@ -331,7 +329,7 @@
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6563.069851310654!2d-58.56684915!3d-34.66644645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUNLAM+Universidad+Nacional+de+La+Matanza!5e0!3m2!1ses-419!2sar!4v1435777579511" allowfullscreen></iframe>
 	</div>
 	<div class="panel-contacto">
-		<div class="contenedor">
+		<div class="contenedor wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
 			<h2><i class="fa fa-chevron-right"></i> Contactanos</h2>
 			<form action="mailto:contacto@urbanrevenge.com">
 				<div class="contenedor-control">
@@ -363,10 +361,11 @@
 	</div>
 	<div id="irArriba"><i class="fa fa-chevron-up"></i></div>
 	<!-- scripts -->
-	<script type="text/javascript" src="./js/jquery.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
-	<script type="text/javascript" src="./js/covervid.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.modal.js"></script>
+	<script type="text/javascript" src="./js/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/vendor/wow.js"></script>
+	<script type="text/javascript" src="./js/vendor/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="./js/vendor/covervid.min.js"></script>
+	<script type="text/javascript" src="./js/vendor/jquery.modal.js"></script>
 	<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

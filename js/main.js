@@ -9,6 +9,7 @@ $(document).on('ready', function(){
     var $irArriba   = $('#irArriba');
 
     // Oculta el boton 'ir arriba' si no hay scroll
+    $irArriba.hide();
     $(window).on('scroll', function(){
         if($(this).scrollTop()) {
             $irArriba.fadeIn();
@@ -26,6 +27,9 @@ $(document).on('ready', function(){
         tickerHover: true,
         pager: false
     });
+
+    // Inicializando WOW plugin
+    new WOW().init();
 
     // Anima el scroll hasta el comienzo de la pagina
      $irArriba.on('click', function(){
