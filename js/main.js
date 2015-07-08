@@ -10,6 +10,9 @@ $(document).on('ready', function(){
     var $botones        = $('.tarjeta-detalle-producto-contenedor .btn');
     var $colores        = $('.tarjeta-detalle-producto-contenedor .colores i');
 
+    //menu items
+    var $itemsMenu      = $("li[id*='-menu']");
+
     // Campos de formulario (Usando solo vainilla js como lo pidio la docente)
     var formulario     = document.getElementById('formularioContacto');
     var usuario        = document.getElementById('usuario');
@@ -27,6 +30,14 @@ $(document).on('ready', function(){
         } else {
             $irArriba.fadeOut();
         }
+    });
+
+    // funcionalidad de menu
+    $itemsMenu.on('click', function(){
+        $(this).css({"color": "inherit", "background": "inherit"});
+        var nombreDeClase = $(this).attr('id').replace('menu', 'contenido-menu'); // construccion del nombre de la clase a mostrar
+        $(this).css({"color": "white", "background": "gray"});
+        $(this).siblings("." + nombreDeClase).slideToggle(); // animacion del menu
     });
 
     // Inicializando Carrusel
