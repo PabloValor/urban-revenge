@@ -13,4 +13,12 @@
       .panel-ofertas .tarjeta-detalle-producto-contenedor {
          left: 0;
       }
+      /* Para evitar que se corte el texto del carrusel*/
+      .bxslider li {
+          height: 130vh !important;
+      }
+    .panel-contacto .dos-en-linea input {
+        width: 100%;
+        margin: .2em 0; 
+    }
 }

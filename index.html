@@ -358,21 +358,25 @@
 	<div class="panel-contacto">
 		<div class="contenedor wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 			<h2><i class="fa fa-chevron-right"></i> Contactanos</h2>
-			<form action="mailto:contacto@urbanrevenge.com">
+
+			<form action="mailto:contacto@urbanrevenge.com" id="formularioContacto">
 				<div class="contenedor-control">
-					<input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario" minlength="6" required>
+					<input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario">
 				</div>
 				<div class="contenedor-control">
-					<input type="email" name="mail" id="mail" placeholder="Ingrese su E-mail" minlength="6" required>
+					<input type="text" name="mail" id="mail" placeholder="Ingrese su E-mail">
 				</div>
 				<div class="contenedor-control">
-					<input type="password" name="pwd" id="psw" placeholder="Ingrese su Contraseña" minlength="6" required>
+					<input type="password" name="pwd" id="password" placeholder="Ingrese su Contraseña">
 				</div>
 				<div class="contenedor-control">
-					<input type="password" name="confirmaPwd" id="confirmaPsw" placeholder="Confirme Contraseña" minlength="6" required>
+					<input type="password" name="confirmaPwd" id="confirmaPsw" placeholder="Confirme Contraseña">
 				</div>
 				<div class="contenedor-control">
-					<input type="number" name="cantidad" id="cantiadad" placeholder="Ingrese la cantidad" minlength="1" maxlength="100" required>
+					<div class="dos-en-linea">
+						<input type="text" name="codigoProducto" id="producto" placeholder="Ingrese el código del producto">
+						<input type="text" name="cantidad" id="cantiadad" placeholder="Ingrese la cantidad">
+					</div>
 				</div>
 				<div class="contenedor-control">
 					<button type="submit">Enviar <i class="fa fa-paper-plane"></i></button>

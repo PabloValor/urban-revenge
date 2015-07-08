@@ -2,13 +2,22 @@ $(document).on('ready', function(){
     "use strict";
 
     // Cacheando objetos DOM
-    var $cabecera   = $('.cabecera');
-    var $covervid   = $('.covervid-video');
-    var altoVentana = $(window).height();
-    var $tarjetas   = $('.tarjeta');
-    var $irArriba   = $('#irArriba');
-    var $botones    = $('.tarjeta-detalle-producto-contenedor .btn');
-    var $colores    = $('.tarjeta-detalle-producto-contenedor .colores i');
+    var $cabecera       = $('.cabecera');
+    var $covervid       = $('.covervid-video');
+    var altoVentana     = $(window).height();
+    var $tarjetas       = $('.tarjeta');
+    var $irArriba       = $('#irArriba');
+    var $botones        = $('.tarjeta-detalle-producto-contenedor .btn');
+    var $colores        = $('.tarjeta-detalle-producto-contenedor .colores i');
+
+    // Campos de formulario (Usando solo vainilla js como lo pidio la docente)
+    var formulario     = document.getElementById('formularioContacto');
+    var usuario        = document.getElementById('usuario');
+    var email          = document.getElementById('mail');
+    var password       = document.getElementById('password');
+    var confirmaPsw    = document.getElementById('confirmaPsw');
+    var producto       = document.getElementById('producto');
+    var cantidad       = document.getElementById('cantiadad');
 
     // Oculta el boton 'ir arriba' si no hay scroll
     $irArriba.hide();
@@ -71,11 +80,52 @@ $(document).on('ready', function(){
         }
     );
 
-    $covervid.height(altoVentana);
-
     // Seteando el alto de la cabecera de acuerdo al alto de la ventana
+    $covervid.height(altoVentana);
     $cabecera.height(altoVentana);
 
     // Inicializando plugin covervid (video como background)
     $('.covervid-video').coverVid(1920, 1080);
+
+    /* Validacion de formulario con solo Javascript puro */
+    formulario.addEventListener('submit', function(e){
+
+        var regExpEmail = /\S+@\S+\.\S+/; // algo@algo.algo => OK
+        var regExpNumeros = /[1-9]|\./;  // solo numeros del 1 al 9
+
+        // Validacion campo usuario
+        if(usuario.value.length < 6) {
+            alert("El Usuario debe tener mas de  6 caracteres");
+            e.preventDefault();
+        }
+
+        // Validacion campo email
+        if(regExpEmail.test(email.value) === false) {
+            alert("El E-mail debe ser de la forma: aquello@esto.algo");
+            e.preventDefault();
+        }
+
+        // Validacion de confirmacion de password
+        if(password.value.length < 6 && password.value != confirmaPsw.value) {
+            alert("El password debe ser mayor a 6 caracteres y debe coincidir");
+            e.preventDefault();
+        }
+
+        if(regExpNumeros.test(cantidad.value) === false) {
+            alert("La cantidad debe ser solo numeros mayores a 0");
+            e.preventDefault();
+        }
+
+        limpiarCampos(); // luego del submit del form, limpio todos los campos
+    });
+
+    function limpiarCampos() {
+        usuario.value       = '';
+        email.value         = '';
+        producto.value      = '';
+        cantidad.value      = '';
+        password.value      = '';
+        confirmaPsw.value   = '';
+        usuario.focus();
+    }
 });

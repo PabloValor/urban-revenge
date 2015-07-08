@@ -1,4 +1,7 @@
 /*		Clases generales 	*/
+* {
+	box-sizing: border-box;
+}
 body {
 	background-color: #EFEFEF;
 	font-size: 20px;
