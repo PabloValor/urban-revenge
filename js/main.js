@@ -21,6 +21,7 @@ $(document).on('ready', function(){
     var confirmaPsw    = document.getElementById('confirmaPsw');
     var producto       = document.getElementById('producto');
     var cantidad       = document.getElementById('cantiadad');
+    var provincia      = document.getElementById('provincia');
 
     // Oculta el boton 'ir arriba' si no hay scroll
     $irArriba.hide();
@@ -34,7 +35,7 @@ $(document).on('ready', function(){
 
     // funcionalidad de menu
     $itemsMenu.on('click', function(){
-        $(this).css({"color": "inherit", "background": "inherit"});
+        $(this).siblings().andSelf().css({"color": "black", "background": "none"});
         var nombreDeClase = $(this).attr('id').replace('menu', 'contenido-menu'); // construccion del nombre de la clase a mostrar
         $(this).css({"color": "white", "background": "gray"});
         $(this).siblings("." + nombreDeClase).slideToggle(); // animacion del menu
@@ -124,6 +125,12 @@ $(document).on('ready', function(){
 
         if(regExpNumeros.test(cantidad.value) === false) {
             alert("La cantidad debe ser solo numeros mayores a 0");
+            e.preventDefault();
+        }
+
+        // Valido que el pedido sea en Buenos Aires
+        if(provincia.options[provincia.selectedIndex].value != "buenosAires") {
+            alert("Los pedidos solo se pueden hacer dentro de Buenos Aires");
             e.preventDefault();
         }
 

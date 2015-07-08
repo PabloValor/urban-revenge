@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
    .panel-ofertas {
 
    }
@@ -13,12 +13,16 @@
       .panel-ofertas .tarjeta-detalle-producto-contenedor {
          left: 0;
       }
+      .panel-ofertas .tarjeta-detalle-producto-contenedor p{
+          font-size: .8em;
+          margin: .4em 0;
+      }
       /* Para evitar que se corte el texto del carrusel*/
       .bxslider li {
           height: 130vh !important;
       }
     .panel-contacto .dos-en-linea input {
         width: 100%;
-        margin: .2em 0; 
+        margin: .2em 0;
     }
 }

@@ -85,7 +85,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="panel-ofertas">
+	<div class="panel-ofertas" id="productos">
 			<div class="contenedor">
 				<h2><i class="fa fa-chevron-right"></i> Productos</h2>
 				<div class="contenedor-tarjetas">
@@ -358,7 +358,7 @@
 											<img src="imagenes/liberty-mountain.png" alt="Logo">
 										</div>
 										<h3><i class="fa fa-chevron-right"></i> Sogas para escalar</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus eveniet.</p>
+										<p>Una soga utilizada en escalada fabricada con un núcleo interior protegido por una funda exterior tejida.</p>
 										<div class="colores">
 											<h4>Colores disponibles</h4>
 											<i class="fa fa-circle amarillo"></i>
@@ -371,10 +371,12 @@
 										</p>
 										<!-- Contenido de modal -->
 										<div id="prod9" style="display:none;" class="modal">
-											<p>Esta es la descripción del producto <a href="#" rel="modal:close">Cerrar</a></p>
 											<p>
-												<img src="imagenes/producto-9.jpg" alt="Surf">
+												<img src="imagenes/producto-9.jpg" alt="Soga para escalar">
 											</p>
+											<p>Este tipo de cuerdas son las utilizadas en la escalada por sus características y propiedades que amortiguan los choques y ante una caída absorbe la energía cinética.</p>
+											<p>Poseen un tratamiento térmico especial el cual les da una apropiada nudabilidad, reduce el deslizamiento de funda y le otorga una excelente nudabilidad.</p>
+											<p><a href="#" rel="modal:close">Cerrar</a></p>
 										</div>
 									</div>
 								</div>
@@ -436,6 +438,15 @@
 						<input type="text" name="codigoProducto" id="producto" placeholder="Ingrese el código del producto">
 						<input type="text" name="cantidad" id="cantiadad" placeholder="Ingrese la cantidad">
 					</div>
+				</div>
+				<div class="contenedor-control">
+					<select name="" id="provincia">
+						<option value="" disabled selected>Seleccione la provincia</option>
+						<option value="buenosAires">Buenos Aires</option>
+						<option value="cordoba">Cordoba</option>
+						<option value="mendoza">Mendoza</option>
+						<option value="entreRios">Entre Rios</option>
+					</select>
 				</div>
 				<div class="contenedor-control">
 					<button type="submit">Enviar <i class="fa fa-paper-plane"></i></button>

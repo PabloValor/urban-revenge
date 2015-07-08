@@ -137,7 +137,7 @@
   .panel-ofertas .tarjeta {
       box-shadow: 0 5px 6px rgba(0,0,0,.2);
       display: table-cell;
-      height: 400px;
+      height: 450px;
       position: relative;
       overflow: hidden;
       width: 30%;
@@ -317,11 +317,15 @@ iframe {
             text-indent: .5em;
             width: 49.6%;
         }
-    .panel-contacto input {
+    .panel-contacto input, .panel-contacto select {
+        background: white;
         border: 2px solid black;
         line-height: 2em;
         text-indent: .5em;
         width: 100%;
+    }
+    .panel-contacto select {
+        height: 2em;
     }
     .panel-contacto input:focus {
         border-color: #7CB9F1;
